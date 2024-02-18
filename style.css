@@ -1,0 +1,166 @@
+@media only screen and (max-width: 480px) {
+  .header {
+    font-size: 100px;
+  }
+  .btn {
+    font-size: 30px;
+  }
+  .popup-content {
+    margin: 50% auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    font-size: 32px;
+  }
+  .btn {
+    font-size: 32px;
+  }
+  .popup-content {
+    margin: 35% auto;
+  }
+}
+
+* {
+  font-family: Single Day;
+  cursor: url("./pics/heart2.png"), auto;
+}
+
+.popup-content {
+  font-size: 40px;
+  text-align: center;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  animation: zoomIn 0.3s;
+}
+.header {
+  padding: 5px;
+  text-align: center;
+  color: #061d45;
+  max-width: 900px;
+}
+body {
+  background-color: #ffff;
+  cursor: url("./pics/heart2.png"), auto;
+}
+.btn {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  margin: 40px 0px;
+  background-color: white;
+  border-radius: 20px;
+  cursor: url("./pics/heart2.png"), auto;
+  border: none;
+  transition: transform 0.5s;
+  color: black;
+  width: 35%;
+  padding: 50px auto;
+}
+.btn:hover {
+  color: white;
+  background-color: #ff64ad;
+  cursor: url("./pics/heart2.png"), auto;
+  border: none;
+  transform: scale(1.5);
+}
+.btn-group {
+  margin: 10px;
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnimation 700ms ease forwards;
+}
+.fadeIn:nth-child(1) {
+  animation-delay: 0s;
+}
+.fadeIn:nth-child(2) {
+  animation-delay: 300ms; /* Delay the second fadeIn by 2 seconds */
+}
+.fadeIn:nth-child(3) {
+  animation-delay: 700ms; /* Delay the third fadeIn by 4 seconds */
+}
+.fadeIn:nth-child(4) {
+  animation-delay: 1ms; /* Delay the third fadeIn by 4 seconds */
+}
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.photo-group {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+}
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
+  padding: 20px auto;
+  background-color: #2dd8af;
+  border-radius: 20px;
+  cursor: url("./pics/heart2.png"), auto;
+  border: none;
+  transition: transform 0.5s;
+  color: black;
+  width: 250px;
+  height: auto;
+  font-size: x-large;
+}
+body,
+html {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
